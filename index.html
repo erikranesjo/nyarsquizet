@@ -3,78 +3,107 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nyårsquizet2025</title>
+    <title>Nyårsquizet 2025</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            background-color: #0000aa;
-            background-image: repeating-linear-gradient(45deg, #0000aa, #0000aa 10px, #000088 10px, #000088 20px);
-            font-family: 'Comic Sans MS', 'Times New Roman', sans-serif;
-            color: #ffff00;
             margin: 0;
-            padding: 10px;
+            font-family: "Poppins", sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Neonrandig bakgrund */
+            background: repeating-linear-gradient(
+                45deg,
+                #ff00ff 0px,
+                #ff00ff 25px,
+                #00ffea 25px,
+                #00ffea 50px,
+                #00ff00 50px,
+                #00ff00 75px,
+                #ffea00 75px,
+                #ffea00 100px
+            );
+            background-size: 200% 200%;
+            animation: spinStripes 10s linear infinite;
+        }
+
+        @keyframes spinStripes {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 200% 200%; }
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 420px;
+            padding: 35px 28px;
+            border-radius: 14px;
+
+            /* Tydligare skugga */
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4), 
+                        0 0 15px rgba(0,0,0,0.25);
+            
             text-align: center;
-            font-size: 1.1rem; /* mindre grundstorlek för mobil */
         }
-        .content {
-            width: 100%; /* fyller mobilskärm */
-            max-width: 380px;
-            margin: 0 auto;
-            border: 4px ridge #ff00ff;
-            background: #ffffff;
-            padding: 10px;
-            box-shadow: 0 0 20px #ff00ff;
-        }
+
         h1 {
-            color: #ff0000;
-            text-shadow: 1px 1px 0 #000000;
+            margin-top: 0;
+            font-size: 1.9rem;
+            font-weight: 600;
         }
-        h2 {
-            color: #008000;
+
+        p {
+            margin-top: 25px;
+            font-size: 1rem;
+            line-height: 1.55;
+            color: #333;
+            white-space: pre-line;
         }
+
+        /* Mindre och mer diskret rubrik */
+        h3 {
+            margin-top: 35px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #777;
+            letter-spacing: 0.5px;
+        }
+
         a {
-            color: #0000ff;
+            display: block;
+            font-size: 1rem;
+            margin: 6px 0;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
         }
+
         a:hover {
-            background: yellow;
-        }
-        .marquee {
-            background: #ffff00;
-            padding: 5px;
-            margin-bottom: 20px;
-            border: 2px dashed #ff0000;
-            font-weight: bold;
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <marquee behavior="alternate" scrollamount="5" style="background:#ffff00; color:#ff0000; padding:5px; border:3px dashed #ff00ff; font-weight:bold;">Välkommen till Nyårsquizet2025!</marquee>
-    <div class="content">
-        <pre style="font-family: 'Courier New', monospace; font-size: 0.9rem; line-height: 1; white-space: pre; margin-bottom:15px; color:#000080;">
-      _____
-     /     \
-    |  0 0  |
-    |   >   |
-     \ --- /
-      \___/
-</pre>
-<h1>NYÅRSQUIZET 2025</h1>
-        <p><blink style="color:#ff0000; font-weight:bold; text-shadow: 0 0 5px #ff0000, 0 0 10px #ff6600, 0 0 15px #ffff00;">Kommer Snart!</blink><br>
-<img src="under.gif" alt="Under Construction" style="margin-top:10px; width:100%; max-width:300px;">
-</p>
+    <div class="container">
+        <h1>NYÅRSQUIZET 2025</h1>
 
-        <div style="font-size: 1.5rem; margin: 20px 0; color:#800000;">★★★</div>
-        <h2>Tidigare Quiz</h2>
-        <ul>
-            <li><a href="quiz2024.pdf" target="_blank">Nyårsquiz 2024</a></li>
-            <li><a href="quiz2023.pdf" target="_blank">Nyårsquiz 2023</a></li>
-        </ul>
-
-        <p style="font-family: 'Courier New', monospace; font-size: 1.2rem; margin-top: 30px;">
-            
-            <span style="display: inline-block; padding: 5px 10px; background: #000; color: #0f0; border: 2px inset #333;">000123</span>
+        <p>
+Hej Vänner!
+Snart kommer nyårsquizet, samma upplägg som tidigare år!
         </p>
-        
-        
+
+        <h3>TIDIGARE QUIZ</h3>
+        <a href="quiz2023.pdf" target="_blank">Quiz 2023</a>
+        <a href="quiz2024.pdf" target="_blank">Quiz 2024</a>
     </div>
 </body>
 </html>
